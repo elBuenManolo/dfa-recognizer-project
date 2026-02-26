@@ -2,6 +2,15 @@
     Specify a DFA that recognizes the following language over binary strings: 
     L={ w | w begins with a 1 and ends with a 0 } 
 */
+states = {q0, q1, q2, q3}
+transitions = {
+    (q0, 1, q1);
+    (q1, 0, q2);
+    (q1, 1, q1);
+    (q2, 0, q2);
+    (q2, 1, q1)
+}
+ini = q0
+finals = {q2}
 
-
-/*Write your full name here: ...*/
+/*Write your full name here: Arnau Sole de la Cruz*/
